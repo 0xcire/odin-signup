@@ -6,6 +6,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: Barlow, sans-serif;
 }
 
@@ -27,8 +28,7 @@ html {
 */
 #wrapper {
   display: flex;
-  height: 80vh;
-  width: 100%;
+  height: 100vh;
   max-width: 1200px;
 }
 
@@ -43,6 +43,7 @@ html {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url("https://images.pexels.com/photos/1407305/pexels-photo-1407305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   width: 30%;
+  height: 100%;
 }
 
 .logo-flex {
@@ -103,20 +104,55 @@ html {
   margin-top: 1%;
 }
 
+.form {
+  height: 50%;
+  padding: 10px 0;
+  background-color: #f4f4f4;
+}
+
 .form h3 {
   font-size: 1.8rem;
   padding-left: 5%;
 }
 
 form {
+  height: 100%;
   display: flex;
   background-color: #f4f4f4;
   font-size: 1.6rem;
   padding: 3% 0 3% 5%;
 }
 
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .right {
   margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  width: 40%;
+}
+
+.left label,
+.right label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.left input,
+.right input {
+  height: 30%;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  margin: 2px 0 6px 0;
 }
 
 .cta {
@@ -124,6 +160,7 @@ form {
 }
 
 .cta-btn {
+  font-size: 16px;
   background-color: #596d48;
   color: #f4f4f4;
   border: none;
@@ -144,7 +181,7 @@ label {
   text-transform: uppercase;
 }
 
-input {
+/* input {
   border-radius: 3px;
   border: 1px solid grey;
-}
+} */

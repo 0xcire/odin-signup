@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A not so responsive sign up form" />
+
+    <title>Sign up to nothing here!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div id="wrapper" class="debug">
+      <div id="company" class="debug">
+        <!-- <div class="darken"></div> -->
+        <div class="logo-flex">
+          <img
+            src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+            alt="logo"
+            class="odin-logo"
+          />
+          <p>
+            Photo by Aditya Aiyar on
+            <a target="blank" href="http://www.pexels.com/@aditya-aiyar-615049/"
+              >Pexels</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div id="sign-up">
+        <div class="copy">
+          <h1>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <i>now</i> to get started.
+          </h1>
+          <h2>You <i>know</i> you want to.</h2>
+        </div>
+
+        <div class="form">
+          <h3>Let's do this!</h3>
+          <form id="form" action="submit">
+            <div class="left">
+              <label class="label" for="fname">First Name</label><br />
+              <input id="fname" name="fname" type="text" /><br />
+              <label class="label" for="email">Email</label><br />
+              <input id="email" name="email" type="email" /><br />
+              <label class="label" for="password">Password</label><br />
+              <input id="password" type="text" name="password" />
+            </div>
+            <div class="right">
+              <label class="label" for="lname">Last Name</label><br />
+              <input id="lname" name="lname" type="text" /><br />
+              <label class="label" for="phone">Phone Number</label><br />
+              <input id="phone" name="phone" type="text" /><br />
+              <label class="label" for="cpassword">Confirm Password</label
+              ><br />
+              <input id="cpassword" name="cpassword" type="text" /><br />
+            </div>
+          </form>
+        </div>
+
+        <div class="cta">
+          <div class="cta-wrapper">
+            <button class="cta-btn" type="submit" form="form" value="Submit">
+              Create Account
+            </button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./app.js"></script>
+</html>

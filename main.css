@@ -1,0 +1,150 @@
+/* 
+
+    ---global--- 
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Barlow, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* debug */
+/* * {
+  border: 1px solid red;
+} */
+
+/* 
+
+
+    ---structure---
+
+
+*/
+#wrapper {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* 
+
+
+    ---company/logo side--- 
+    
+    
+*/
+#company {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("https://images.pexels.com/photos/1407305/pexels-photo-1407305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  width: 30%;
+}
+
+.logo-flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.odin-logo {
+  width: 30%;
+  height: auto;
+  margin-top: 50%;
+
+  /* refreshing all the different methods */
+  /* position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0); */
+}
+
+.logo-flex p {
+  color: #f4f4f4;
+  margin-bottom: 5%;
+  font-size: 1.4rem;
+
+  /* position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0); */
+}
+
+/* 
+
+
+    ---text/form side--- 
+    
+    
+*/
+#sign-up {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15% 0;
+}
+
+.copy {
+  margin-left: 5%;
+}
+
+.copy h1 {
+  font-size: 2.8rem;
+}
+.copy h2 {
+  font-size: 2.2rem;
+  margin-top: 1%;
+}
+
+.form h3 {
+  font-size: 1.8rem;
+  padding-left: 5%;
+}
+
+form {
+  display: flex;
+  background-color: #f4f4f4;
+  font-size: 1.6rem;
+  padding: 3% 0 3% 5%;
+}
+
+.right {
+  margin-left: 5%;
+}
+
+.cta {
+  margin-left: 5%;
+}
+
+.cta-btn {
+  background-color: #596d48;
+  color: #f4f4f4;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+}
+.cta-btn:hover {
+  background-color: grey;
+}
+
+.cta-wrapper p {
+  margin-top: 0.5rem;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+input {
+  border-radius: 3px;
+  border: 1px solid grey;
+}
